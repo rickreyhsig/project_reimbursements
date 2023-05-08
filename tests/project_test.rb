@@ -1,6 +1,7 @@
 require_relative '../src/project'
 require 'test/unit'
 require 'date'
+# require 'byebug'
 
 class TestProjects < Test::Unit::TestCase
   _start = Date.new(2023, 5, 1)
