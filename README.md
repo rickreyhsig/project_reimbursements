@@ -12,3 +12,5 @@ You have a set of projects, and you need to calculate a reimbursement amount for
 - A full day is reimbursed at a rate of 75 dollars per day in a low cost city.
 - A full day is reimbursed at a rate of 85 dollars per day in a high cost city.
 
+### How to run tests:
+* `ruby tests/*`
