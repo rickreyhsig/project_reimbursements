@@ -2,7 +2,6 @@ require_relative '../src/reimbursement'
 require_relative '../src/project'
 require 'test/unit'
 require 'date'
-require 'byebug'
 
 class TestReimbursements < Test::Unit::TestCase
   def test_single_project
