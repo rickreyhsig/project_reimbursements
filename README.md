@@ -12,8 +12,34 @@ You have a set of projects, and you need to calculate a reimbursement amount for
 - A full day is reimbursed at a rate of 75 dollars per day in a low cost city.
 - A full day is reimbursed at a rate of 85 dollars per day in a high cost city.
 
+Given the following sets of projects, provide code that will calculate the reimbursement for each.
+
+Set 1:
+  Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/3/15
+
+Set 2:
+  Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/1/15
+  Project 2: High Cost City Start Date: 9/2/15 End Date: 9/6/15
+  Project 3: Low Cost City Start Date: 9/6/15 End Date: 9/8/15
+
+Set 3:
+  Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/3/15
+  Project 2: High Cost City Start Date: 9/5/15 End Date: 9/7/15
+  Project 3: High Cost City Start Date: 9/8/15 End Date: 9/8/15
+
+Set 4:
+  Project 1: Low Cost City Start Date: 9/1/15 End Date: 9/1/15
+  Project 2: Low Cost City Start Date: 9/1/15 End Date: 9/1/15
+  Project 3: High Cost City Start Date: 9/2/15 End Date: 9/2/15
+  Project 4: High Cost City Start Date: 9/2/15 End Date: 9/3/15
+
+## Explanation
+I've used the 4 set of projects as spec data to test the class logic.
+Instructions on how to run the tests are below.
+
 ### How to run tests:
 * `ruby tests/reimbursement_test.rb`
 * `ruby tests/project_test.rb `
+
 <img width="960" alt="Screen Shot 2023-05-08 at 10 05 40 PM" src="https://user-images.githubusercontent.com/2385700/236975747-ba0f8ab0-48cf-4a01-acd1-fe32c3912b0b.png">
 
