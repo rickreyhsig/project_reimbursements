@@ -3,14 +3,6 @@ require 'byebug'
 
 class Project
   attr_accessor :start_date, :end_date, :city_type
-  RATES = {
-    travel: {
-      low: 45, high: 55
-    },
-    full: {
-      low: 75, high: 85
-    }
-  }
 
   def initialize(start_date, end_date, city_type)
     @start_date = start_date

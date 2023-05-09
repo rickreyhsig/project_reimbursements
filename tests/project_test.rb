@@ -4,9 +4,7 @@ require 'date'
 # require 'byebug'
 
 class TestProjects < Test::Unit::TestCase
-  _start = Date.new(2023, 5, 1)
-  _end = Date.new(2023, 5, 10)
-  @@project = Project.new(_start, _end, :low)
+  @@project = Project.new(Date.new(2023, 5, 1), Date.new(2023, 5, 10), :low)
 
   def test_total_days
     assert_equal( @@project.total_days, 10 )

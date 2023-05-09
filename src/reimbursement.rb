@@ -15,18 +15,6 @@ class Reimbursement
   end
 
   def amount
-    # total_amount = 0
-    # previous_end_date = nil
-    # project_set.each do |project|
-    #   unless has_overlap?(project, previous_end_date)
-    #     travel_amount = project.travel_days * Project::RATES[:travel][project.city_type]
-    #     daily_amount = project.full_days * Project::RATES[:full][project.city_type]
-
-    #     total_amount += travel_amount + daily_amount
-    #   else
-    #   end
-    # end
-    # return total_amount
     merge_projects
     merged_values.inject(:+)
   end
@@ -97,17 +85,13 @@ class Reimbursement
       if (idx == 0)
         if merge
           daily_values << RATES[:full][type]
-          # p RATES[:full][type]
         else
           daily_values << RATES[:travel][type]
-          # p RATES[:travel][type]
         end
       elsif (idx == merged_project.total_days - 1)
         daily_values << RATES[:travel][type]
-        # p RATES[:travel][type]
       else
         daily_values << RATES[:full][type]
-        # p RATES[:full][type]
       end
     end
   end
